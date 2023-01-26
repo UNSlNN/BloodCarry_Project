@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: aa2d80aeccdc9044ab533cb36ca65e77
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - PK Ang Thong
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d279d9fe65297ba48966624f0dff6527, type: 3}
+  - {fileID: 12800000, guid: 58e8764c4a7c53949906891387988809, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
