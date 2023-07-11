@@ -1,4 +1,2 @@
 # BloodCarry_Project
-The University game project about Contest Activities "BRAND’S Young Blood Game Creator" by Thai Red Cross Society
-
-Contact me if you have problem: nusin2545@gmail.com
+“Blood Carry” game is selected by Walailak University to submit in a national contest, "BRAND’S Young Blood Game Creator" which is organized by Thai Red Cross Society.
