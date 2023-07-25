@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public SoundSet[] sounds;
+    public SoundSet[] sounds;   // Sound list
     public bool isPlayed;
-    // Start is called before the first frame update
     void Start()
     {
         foreach(SoundSet soundset in sounds)
@@ -39,13 +38,4 @@ public class AudioManager : MonoBehaviour
             }
         }
     }
-    /*
-    public void SetVolum(float volum)
-    {
-        foreach (SoundSet soundset in sounds)
-        {
-            soundset.mainmixer.SetFloat("Mixer", soundset.volume);
-        }
-    }
-    */
 }

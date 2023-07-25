@@ -11,7 +11,7 @@ public class EnemyControl : MonoBehaviour
     private int lastWayPointIndex;
     private float minDistance = 0.1f;
     private float movementSpeed = 3.0f;
-    public float line; // draw gizmos
+    public float radius;
     private Animator anim;
     private enum State { Walking, Running }
     private State state;
@@ -35,17 +35,17 @@ public class EnemyControl : MonoBehaviour
         Debug.DrawRay(transform.position, directionToTarget, Color.red, 0f);
         float distance = Vector3.Distance(transform.position, targetWayPoint.position); // chance target wayPoint [targetenemy -> target wayPoint]
         CheckDistanceTowayPoint(distance);
-        if (playerDistance < line && !HealthState.gameOver && !UIState.iswinner) //TODO//
+        if (playerDistance < radius && !HealthState.gameOver && !UIState.iswinner) //TODO//
         {
             transform.position = Vector3.MoveTowards(transform.position, player.position, movementStep * 2f);
             FilppingTarget(playerToTarget);
-            state = State.Running;
+            state = State.Running;  // Play animation
         }
         else
         {
             transform.position = Vector3.MoveTowards(transform.position, targetWayPoint.position, movementStep);
             FilppingPoint(directionToTarget);
-            state = State.Walking;
+            state = State.Walking;  // Play animation
         }
     }
     void CheckDistanceTowayPoint(float cuurenDistance)
@@ -68,7 +68,6 @@ public class EnemyControl : MonoBehaviour
     {
         if (target.x > 1) // Right
         {
-            //Debug.Log("this A");
             if (transform.localScale.x == -1)
             {
                 transform.localScale = new Vector3(1, 1);
@@ -76,7 +75,6 @@ public class EnemyControl : MonoBehaviour
         }
         else if(target.x < -1) // Left
         {
-            //Debug.Log("this B");
             if (transform.localScale.x == 1)
             {
                 transform.localScale = new Vector3(-1, 1);
@@ -103,7 +101,7 @@ public class EnemyControl : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, line);
+        Gizmos.DrawWireSphere(transform.position, radius);
     }
 
 }

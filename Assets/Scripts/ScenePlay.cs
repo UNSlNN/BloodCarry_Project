@@ -18,7 +18,6 @@ public class ScenePlay : MonoBehaviour
     public void PlayGame()    // Load Scene for button click
     {
         SceneManager.LoadScene("Scene00_1");
-        PlayerPrefs.DeleteAll();
     }
     public void QuitGame()    // Exit Game Botton click
     {

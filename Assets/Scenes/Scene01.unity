@@ -1964,7 +1964,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &352276157
 GameObject:
@@ -7378,10 +7378,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -7999,7 +7999,7 @@ Transform:
   - {fileID: 31339944}
   - {fileID: 473489984}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!61 &899826348
 BoxCollider2D:
@@ -14122,7 +14122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4823301671887456813, guid: 7cbc058f99657ff42a71cc9a87c1bfa6, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4823301671887456813, guid: 7cbc058f99657ff42a71cc9a87c1bfa6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14175,7 +14175,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4904709391045174242, guid: 5d493b8aa79e13b4091d9852d4aafed2, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4904709391045174242, guid: 5d493b8aa79e13b4091d9852d4aafed2, type: 3}
       propertyPath: m_LocalPosition.x
